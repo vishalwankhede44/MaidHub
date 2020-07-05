@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@drawable/back">
+
+    <Button
+        android:id="@+id/RegBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="#94000000"
+        android:fontFamily="@font/belgrano"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Register"
+        android:textColor="@color/design_default_color_background"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registeras"
+        app:strokeColor="#F7F6F6"
+        app:strokeWidth="2dp" />
+
+    <RadioGroup
+        android:id="@+id/registeras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textlayout2"
+        app:layout_constraintStart_toStartOf="@+id/textlayout2"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/belgrano"
+            android:text="Service Provider   "
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/belgrano"
+            android:text="House Holder   "
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout1"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="#FAF2F2"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxBackgroundMode="none"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="#F1EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textlayout1"
+        app:layout_constraintTop_toBottomOf="@+id/textlayout2">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/belgrano"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F8F8F8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="#FAF2F2"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxBackgroundMode="none"
+        app:boxStrokeColor="#FFFFFF"
+        app:hintTextColor="#F1EFEF"
+        app:layout_constraintEnd_toEndOf="@+id/textlayout1"
+        app:layout_constraintStart_toStartOf="@+id/textlayout1"
+        app:layout_constraintTop_toBottomOf="@+id/textlayout1">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/belgrano"
+            android:hint=" Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FDFDFD" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="#FFFFFF"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxBackgroundMode="none"
+        app:boxStrokeColor="#FFFFFF"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@android:color/black"
+            android:fontFamily="@font/belgrano"
+            android:hint="Full Name"
+            android:importantForAutofill="no"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#C9C9C9"
+            android:textColorHint="#F8F8F8"
+            tools:ignore="DuplicateIds" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/belgrano"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        android:text="Registration"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textlayout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textlayout2"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordLayout"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_lock_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

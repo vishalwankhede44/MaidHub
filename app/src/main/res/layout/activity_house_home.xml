@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseHome"
+    android:background="@drawable/back2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/belgrano"
+        android:text="House Holder"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newReq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/belgrano"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="New Request"
+        android:textSize="16sp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/prevReq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/belgrano"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="View Previous Request's"
+        android:textSize="16sp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/newReq"
+        app:layout_constraintStart_toStartOf="@+id/newReq"
+        app:layout_constraintTop_toBottomOf="@+id/newReq"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/belgrano"
+        android:paddingLeft="24dp"
+        android:paddingTop="10dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="10dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
